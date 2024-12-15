@@ -38,7 +38,7 @@
 
 .Card {
   border-radius: 15px;
-  border: 10px solid grey;
+  border: 10px solid rgba(158, 158, 158, 0.568);
   margin-top: 25px;
   width: 500px;
   display: flex;
@@ -69,13 +69,36 @@
 
 .MiniCard {
   border-radius: 15px;
-  border: 5px solid grey;
+  border: 5px solid rgba(158, 158, 158, 0.568);
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .Card {
+    width: 330px;
+    height: 550px;
+  }
+
+  .PokeImg {
+    width: 310px;
+    height: 300px;
+  }
+
+  .InfosCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+  }
+
+  .Evolution {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .Plante {
@@ -239,6 +262,7 @@
   ); /* Beige clair au gris clair */
   //   box-shadow: inset 0 0 0 2px #a8a77a;
 }
+
 .AllInfos {
   h1 {
     font-size: 20px;
