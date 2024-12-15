@@ -1,0 +1,273 @@
+.Container {
+  background-color: rgb(218, 218, 218);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.InfosCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 340px;
+}
+.InfosCardHp {
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+}
+
+.PokeImg {
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 480px;
+  height: 480px;
+}
+
+.TalentsCard {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Card {
+  border-radius: 15px;
+  border: 10px solid grey;
+  margin-top: 25px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Evolution {
+  display: flex;
+  margin-top: 25px;
+  gap: 25px;
+  img {
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 100px;
+  }
+}
+
+.EvolutionPlus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.MiniCard {
+  border-radius: 15px;
+  border: 5px solid grey;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Plante {
+  background: linear-gradient(
+    135deg,
+    #7ac74c,
+    #a6db7d
+  ); /* Vert clair au vert pâle */
+  //   box-shadow: inset 0 0 0 2px #7ac74c;
+}
+
+.Feu {
+  background: linear-gradient(
+    135deg,
+    #ee8130,
+    #ff9c5a
+  ); /* Orange vif au saumon */
+  //   box-shadow: inset 0 0 0 2px #ee8130;
+}
+
+.Eau {
+  background: linear-gradient(
+    135deg,
+    #6390f0,
+    #8db1f2
+  ); /* Bleu vif au bleu clair */
+  //   box-shadow: inset 0 0 0 2px #6390f0;
+}
+
+.Électrik {
+  background: linear-gradient(
+    135deg,
+    #f7d02c,
+    #ffe270
+  ); /* Jaune vif au jaune clair */
+  //   box-shadow: inset 0 0 0 2px #f7d02c;
+}
+
+.Glace {
+  background: linear-gradient(
+    135deg,
+    #96d9d6,
+    #c2ecea
+  ); /* Cyan clair au bleu pâle */
+  //   box-shadow: inset 0 0 0 2px #96d9d6;
+}
+
+.Combat {
+  background: linear-gradient(
+    135deg,
+    #c22e28,
+    #e05e56
+  ); /* Rouge sombre au rouge clair */
+  //   box-shadow: inset 0 0 0 2px #c22e28;
+}
+
+.Poison {
+  background: linear-gradient(
+    135deg,
+    #a33ea1,
+    #c26ac3
+  ); /* Violet sombre au violet clair */
+  //   box-shadow: inset 0 0 0 2px #a33ea1;
+}
+
+.Sol {
+  background: linear-gradient(
+    135deg,
+    #e2bf65,
+    #f1d59a
+  ); /* Brun clair au sable */
+  //   box-shadow: inset 0 0 0 2px #e2bf65;
+}
+
+.Vol {
+  background: linear-gradient(
+    135deg,
+    #a98ff3,
+    #c0b4f8
+  ); /* Bleu lavande au violet clair */
+  //   box-shadow: inset 0 0 0 2px #a98ff3;
+}
+
+.Psy {
+  background: linear-gradient(
+    135deg,
+    #f95587,
+    #fa7da5
+  ); /* Rose vif au rose clair */
+  //   box-shadow: inset 0 0 0 2px #f95587;
+}
+
+.Insecte {
+  background: linear-gradient(
+    135deg,
+    #a6b91a,
+    #c2d45a
+  ); /* Vert olive au vert clair */
+  //   box-shadow: inset 0 0 0 2px #a6b91a;
+}
+
+.Roche {
+  background: linear-gradient(
+    135deg,
+    #b6a136,
+    #d6c466
+  ); /* Brun doré au beige clair */
+  //   box-shadow: inset 0 0 0 2px #b6a136;
+}
+
+.Spectre {
+  background: linear-gradient(
+    135deg,
+    #735797,
+    #8f6faf
+  ); /* Violet sombre au lilas clair */
+  //   box-shadow: inset 0 0 0 2px #735797;
+}
+
+.Dragon {
+  background: linear-gradient(
+    135deg,
+    #6f35fc,
+    #8b61fe
+  ); /* Violet foncé au violet lumineux */
+  //   box-shadow: inset 0 0 0 2px #6f35fc;
+}
+
+.Ténèbres {
+  background: linear-gradient(
+    135deg,
+    #705746,
+    #8c6f5e
+  ); /* Marron foncé au brun clair */
+  //   box-shadow: inset 0 0 0 2px #705746;
+}
+
+.Acier {
+  background: linear-gradient(
+    135deg,
+    #b7b7ce,
+    #d1d1e1
+  ); /* Gris métallique au gris clair */
+  //   box-shadow: inset 0 0 0 2px #b7b7ce;
+}
+
+.Fée {
+  background: linear-gradient(
+    135deg,
+    #d685ad,
+    #e8afc6
+  ); /* Rose pastel au rose très clair */
+  //   box-shadow: inset 0 0 0 2px #d685ad;
+}
+
+.Normal {
+  background: linear-gradient(
+    135deg,
+    #a8a77a,
+    #c5c5a2
+  ); /* Beige clair au gris clair */
+  //   box-shadow: inset 0 0 0 2px #a8a77a;
+}
+.AllInfos {
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  span {
+    font-weight: 500;
+  }
+  .InfoMap {
+    display: flex;
+    flex-direction: column;
+    .InfoMap2 {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      p {
+        margin: 0px;
+      }
+      img {
+        margin-left: 5px;
+        border-radius: 100px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .InfoStats {
+    p {
+      margin-left: 10px;
+    }
+  }
+}
