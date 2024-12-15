@@ -22,7 +22,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
           );
           setPreEvol0(response.data);
         } catch (err) {
-          console.log("Erreur pour pre[0] :", err.message);
+          console.error(err.message);
         }
       } else {
         setPreEvol0(null);
@@ -35,7 +35,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
           );
           setPreEvol1(response.data);
         } catch (err) {
-          console.log("Erreur pour pre[1] :", err.message);
+          console.error(err.message);
         }
       } else {
         setPreEvol1(null);
@@ -50,7 +50,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
           );
           setNextEvol0(response.data);
         } catch (err) {
-          console.log("Erreur pour next[0] :", err.message);
+          console.error(err.message);
         }
       } else {
         setNextEvol0(null);
@@ -63,7 +63,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
           );
           setNextEvol1(response.data);
         } catch (err) {
-          console.log("Erreur pour next[1] :", err.message);
+          console.error(err.message);
         }
       } else {
         setNextEvol1(null);
@@ -252,21 +252,21 @@ const Pokemon = ({ PokeData, setPokeData }) => {
             <div className="Evolution EvolutionPlus">
               {PokeData?.sprites?.shiny ? (
                 <div className={`${PokeData.types[0].name} MiniCard`}>
-                  <p>Shiny:</p>
+                  <p>Shiny</p>
                   <img src={PokeData?.sprites?.shiny} alt="" />
                 </div>
               ) : null}
 
               {PokeData?.sprites?.gmax?.regular ? (
                 <div className={`${PokeData.types[0].name} MiniCard`}>
-                  <p>Gigamax:</p>
+                  <p>Gigamax</p>
                   <img src={PokeData?.sprites?.gmax?.regular} alt="" />
                 </div>
               ) : null}
 
               {PokeData?.sprites?.gmax?.shiny ? (
                 <div className={`${PokeData.types[0].name} MiniCard`}>
-                  <p>Gigamax shiny:</p>
+                  <p>Gigamax shiny</p>
                   <img src={PokeData?.sprites?.gmax?.shiny} alt="" />
                 </div>
               ) : null}

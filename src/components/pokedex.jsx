@@ -9,8 +9,6 @@ const Pokedex = () => {
   const [pokemonData, setPokemonData] = useState([]);
   const [options, setOptions] = useState([]);
 
-  console.log(pokemonData);
-
   useEffect(() => {
     const fetchTyradex = async () => {
       try {
@@ -19,7 +17,7 @@ const Pokedex = () => {
         );
         setPokemonsData(response.data);
       } catch (err) {
-        console.log(err.message);
+        console.error(err.message);
       }
     };
 
@@ -46,7 +44,7 @@ const Pokedex = () => {
         );
         setPokemonData(response.data);
       } catch (err) {
-        console.log(err.message);
+        console.error(err.message);
       }
     };
 
@@ -60,7 +58,7 @@ const Pokedex = () => {
       );
       setPokemonData(response.data);
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
     }
   };
 
