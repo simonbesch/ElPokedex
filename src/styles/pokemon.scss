@@ -13,6 +13,7 @@
   justify-content: space-between;
   gap: 340px;
 }
+
 .InfosCardHp {
   display: flex;
   align-items: center;
@@ -76,29 +77,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-@media (max-width: 600px) {
-  .Card {
-    width: 330px;
-    height: 550px;
-  }
-
-  .PokeImg {
-    width: 310px;
-    height: 300px;
-  }
-
-  .InfosCard {
-    display: flex;
-    justify-content: space-between;
-    gap: 150px;
-  }
-
-  .Evolution {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .Plante {
@@ -290,8 +268,63 @@
     }
   }
   .InfoStats {
+    margin-bottom: 25px;
     p {
       margin-left: 10px;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .Card {
+    width: 330px;
+    height: 550px;
+  }
+
+  .PokeImg {
+    width: 310px;
+    height: 300px;
+  }
+
+  .InfosCard {
+    gap: 150px;
+  }
+
+  .Evolution {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  .Card {
+    width: 280px;
+    height: 480px;
+  }
+
+  .PokeImg {
+    width: 250px;
+    height: 230px;
+  }
+
+  .InfosCard {
+    gap: 125px;
+  }
+}
+
+@media (max-width: 333px) {
+  .Card {
+    width: 220px;
+    height: 400px;
+  }
+
+  .PokeImg {
+    width: 200px;
+    height: 190px;
+  }
+
+  .InfosCard {
+    margin-top: 30px;
+    gap: 80px;
   }
 }

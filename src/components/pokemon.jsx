@@ -210,7 +210,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
                 <span>Défence: </span> {PokeData?.stats?.spe_def}
               </p>
               <p>
-                <span>vitesse: </span> {PokeData?.stats?.vit}
+                <span>Vitesse: </span> {PokeData?.stats?.vit}
               </p>
             </div>
             <p>
@@ -266,7 +266,7 @@ const Pokemon = ({ PokeData, setPokeData }) => {
 
               {PokeData?.sprites?.gmax?.shiny ? (
                 <div className={`${PokeData.types[0].name} MiniCard`}>
-                  <p>Gigamax shiny</p>
+                  <p>Gigamax Shiny</p>
                   <img src={PokeData?.sprites?.gmax?.shiny} alt="" />
                 </div>
               ) : null}
